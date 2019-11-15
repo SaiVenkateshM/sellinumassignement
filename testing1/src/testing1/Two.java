@@ -1,0 +1,27 @@
+package testing1;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Two {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\selenium jar\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com");
+		Thread.sleep(5000);
+		driver.findElement(By.name("q")).sendKeys("bala");
+		Thread.sleep(5000);
+		driver.findElement(By.className("gNO89b")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//*[text()='Images']")).click();
+		driver.findElement(By.linkText("Sign in")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.partialLinkText("Learn")).click();
+		driver.close();
+	}
+
+}

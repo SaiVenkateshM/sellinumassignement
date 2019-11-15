@@ -1,0 +1,14 @@
+package testing1;
+
+import org.openqa.selenium.WebDriver;
+
+public class One {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\selenium jar");
+WebDriver driver = new ChromeDriver();
+driver.get("https://www.google.com/");
+	}
+
+}

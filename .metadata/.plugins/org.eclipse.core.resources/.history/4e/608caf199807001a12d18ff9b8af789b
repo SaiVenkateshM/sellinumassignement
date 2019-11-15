@@ -1,0 +1,26 @@
+package testing1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Eighth {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver","C:\\selenium jar\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://www.rediff.com");
+		Thread.sleep(1000);
+		driver.findElement(By.linkText("Create Account")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.name("name49911852")).sendKeys("Sai Venkatesh");
+		Thread.sleep(1000);
+		driver.findElement(By.name("login49911852")).sendKeys("saivenky");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("")).sendKeys(arg0);
+	}
+
+}
